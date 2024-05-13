@@ -1,0 +1,5 @@
+database query for user table getting users information:
+
+SELECT users.user_id, users.firstname, users.lastname, users.birthday, users.sex, users.user, user_address.user_city AS address
+FROM user_address
+INNER JOIN users ON user_address.user_id = users.user_id;
